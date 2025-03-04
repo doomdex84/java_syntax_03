@@ -1,14 +1,33 @@
 package org.example;
 
-// 문제 : `안녕하세요.`를 10번 출력해주세요.
-// 조건 : System.out.println은 딱 한번만 사용 가능
-// 조건 : \를 활용해서 줄바꿈 해주세요.
-// 힌트 : \n 은 줄바꿈을 의미합니다.
+// 문제 : a와 b가 가지고 있는 값을 서로 뒤바꿔주세요.
 
 class Main {
     public static void main(String[] args) {
-        // `\` <= 백스페이스 좌측 키
-        System.out.println("안녕하세요.\n안녕하세요.\n안녕하세요.\n안녕하세요.\n안녕하세요.\n안녕하세요.\n안녕하세요.\n안녕하세요.\n안녕하세요.\n안녕하세요.");
+        // `int a` => a라는 이름의 변수(즉 공간)을 만든다.
+        // `int` => a라는 공간에는 정수만 담을 수 있다.
+        // `;` => 문장이 끝남을 알린다.
+        int a;
+        a = 5;
+
+        System.out.println(a);
+        System.out.println(a + 10);
+
+        int b = 10;
+
+        // `+` => 문장과 문자을 합친다.
+        System.out.println("a : " + a);
+        System.out.println("b : " + b);
+
+        // 여기서 부터
+        System.out.println("a : "+ b);
+        System.out.println("b : " + a );
+        
+        // 여기까지 수정 가능
+
+        System.out.println("a : " + a);
+        // 출력 : a : 10
+        System.out.println("b : " + b);
+        // 출력 :  b : 5
     }
 }
-// > 주석으로 사용할려면 이기호를 먼저 친다.
