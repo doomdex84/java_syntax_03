@@ -1,82 +1,35 @@
-package org.example;
-
-// 문제 : 실행되는 출력문에는 참 그렇지 않으면 거짓 이라고 적어주세요.
+//컨트롤 쉬프트 에프는 자리정렬하는 단축키다.
+//
+// 문제 : dan 변수의 값에 따라 첫번째로 곱하는 수가 변하게 해주세요.
 
 class Main {
     public static void main(String[] args) {
-        if ( true ) {
-            System.out.println("참");
-        }
+        int dan = 8;
 
-        if ( false ) {
-            System.out.println("거짓");
-        }
-
-        int a = 10;
-
-        // `==` => 같다.
-        if ( a == 10 ) {
-            System.out.println("참1");
-        }
-
-        // `!=` => 같지 않다.
-        if ( a != 10 ) {
-            System.out.println("거짓1");
-        }
-
-        if ( a > 10 ) {
-            System.out.println("거짓2");
-        }
-
-        if ( a >= 10 ) {
-            System.out.println("참2");
-        }
-
-        int b = 10;
-
-        if ( a == b ) {
-            System.out.println("참3");
-        }
-
-        // boolean c => c 에는 오직 true/false 만 담을 수 있다.
-        boolean c = a != b;
-
-        // 이문제 다시 풀어보기
-
-        if ( c ) {
-            System.out.println("거짓3");
-        }
-
-        if ( c == false ) {
-            System.out.println("참4");
-        }
+        System.out.println("5 * 1 = 8");
+        System.out.println("5 * 2 = 16");
+        System.out.println("5 * 3 = 24");
+        System.out.println("5 * 4 = 32");
+        System.out.println("5 * 5 = 40");
+        System.out.println("5 * 6 = 48");
+        System.out.println("5 * 7 = 56");
+        System.out.println("5 * 8 = 64");
+        System.out.println("5 * 9 = 72");
 
 
 
-        // `!` => 반전 / = not
-        if ( !c ) {
-            System.out.println("참5");
-        }
+        // 출력
+    /*
 
-
-        // `!` => 반전
-        if ( !(!c) ) {
-            System.out.println("참6");
-        }
-
-
-        boolean d = true;
-
-        if ( c != d ) {
-            System.out.println("참7");
-        }
-
-        if ( 20 > 2 && 10 > 3 && true != false && 10 != 10 ) {
-            System.out.println("거짓4");
-        }
-
-        if ( 10 != 10 || 10 < 2 ) {
-            System.out.println("거짓5");
-        }
+    8 * 1 = 8
+    8 * 2 = 16
+    8 * 3 = 24
+    8 * 4 = 32
+    8 * 5 = 40
+    8 * 6 = 48
+    8 * 7 = 56
+    8 * 8 = 64
+    8 * 9 = 72
+    */
     }
 }
