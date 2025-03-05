@@ -1,44 +1,26 @@
 //컨트롤 쉬프트 에프는 자리정렬하는 단축키다.
 
-// 문제 : 아래와 같이 출력해주세요.
-// 문제 : 단을 * 1000까지 출력해주세요.
+//결과가 왜 이렇게 나오는가?를 서술
+//명확하게 한줄한줄 세부적으로 표현하기
+
+import java.util.Scanner;
 
 class Main {
     public static void main(String[] args) {
-        int dan = 8;
 
-        // 수정가능지역 시작
+        int a =97;
 
-        int i = 1; //~부터
+        System.out.printf("%c\n",a);
+        System.out.printf("%d\n",a);
 
-        //  여기부터 풀이
+        System.out.println("정수 1개 입력해 : ");
+        Scanner sc = new Scanner(System.in); // System.in : 입력
 
-         while (i<=100) {
-             System.out.println(dan + " * " + i + " = " + dan * i);
-             i++;
-         }
+        int num = sc.nextInt();
+        System.out.println(num);
 
-       //while > ~하는 동안에 반복 < while 반복문 , ~까지
-
-        // 반복문의 3요소
-        // 초기(값)
-        // (종료)조건
-        //  step (보폭,방향)
-
-
-        // 출력
-    /*
-    8 * 1 = 8
-    8 * 2 = 16
-    8 * 3 = 24
-    8 * 4 = 32
-    8 * 5 = 40
-    8 * 6 = 48
-    8 * 7 = 56
-    8 * 8 = 64
-    8 * 9 = 72
-    ...
-    8 * 1000
-    */
     }
 }
+
+
+
