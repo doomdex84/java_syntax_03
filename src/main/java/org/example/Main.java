@@ -1,36 +1,23 @@
 //컨트롤 쉬프트 에프는 자리정렬하는 단축키다.
+// 자바자료형 boolean / char / byte / short / int / long /float / double
+//            논리값 / 문자 /             정수           /      실수    /
 
-//결과가 왜 이렇게 나오는가?를 서술
-//명확하게 한줄한줄 세부적으로 표현하기
 
 
+import java.util.Scanner;
 
 class Main {
     public static void main(String[] args) {
 
+        double a = 2.1;
 
-        int n = 3;
+        if ((a * 3) == 6.3) {
+            System.out.println("같음");
+        } else {
+            System.out.println("다름");
+        }
 
-        for (int i = 1; i <= n; i++) {
-            for (int j = i; j < n; j++) {
-                System.out.print(" ");
-            }
-            for (int k = 1; k <= (2 * i - 1); k++){
-                System.out.print("*");
-            }
-            System.out.println();
-        }
-        for (int i = n - 1; i >= 1; i--){
-            for (int k = n; k > i; k--){
-                System.out.print(" ");
-            }
-            for (int k = 1; k <= (2 * i - 1); k++){
-                System.out.print("*");
-            }
-            System.out.println();
-        }
+
     }
 }
-
-
 
