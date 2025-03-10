@@ -13,14 +13,18 @@ class Main {
 
     public static void main(String[] args) {
 
-        boolean[] a = new boolean[3];
 
-        a[0] = true;
-        a[1] = false;
-        a[2] = true;
+        //  1번 문제
 
+        boolean[] arr1 = new boolean[3];
 
-        System.out.println("표현하기:" + a[0] + a[1] + a[2]);
+        arr1[0] = true;
+        arr1[1] = false;
+        arr1[2] = true;
+
+        //  2번 문제
+
+        System.out.println("정답:" + arr1[0] + arr1[1] + arr1[2]);
 
         double[] c = new double[3];
 
@@ -28,20 +32,26 @@ class Main {
         c[1] = 7.77;
         c[2] = 11.11;
 
-        System.out.println("표현하기:" + c[0] + c[1] + c[2]);
+        System.out.println("정답:" + c[0] + c[1] + c[2]);
 
 
-       int[] arr = new int[10];
+       // 3번 문제
 
-        for (int i = 0; i < arr.length; i++){
-        arr[i] = i++;
-    }
-       System.out.println(arr);
+        int a = 10;
+
+        int[] arr = new int[10];
+
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = i + 1;
+
+            System.out.println(arr[i]);
 
 
         }
 
     }
+}
+
 
 
 // 기본타입은 변수에 직접 담긴다.
