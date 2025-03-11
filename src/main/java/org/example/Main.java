@@ -2,62 +2,46 @@
 // 자바자료형 boolean / char / byte / short / int / long /float / double
 //            논리값 / 문자 /             정수           /      실수    /
 
-
-
-
 package org.example;
 
-class Main {
+import java.awt.*;
+import java.util.Arrays;
 
+class Main {
     public static void main(String[] args) {
 
-        int 결과;
+        String msg = greet("Jin");
+        System.out.println(msg);
 
-        결과 = 계산기.합(10, 20);
-        System.out.println("결과 : " + 결과);
-        // 출력 => 결과 : 30
+        // 문자열만 담을 수 있는 변수 msg에 greet 함수 실행 결과를 넣는다.
 
-        결과 = 계산기.합(30, 20);
-        System.out.println("결과 : " + 결과);
-        // 출력 => 결과 : 50
+        Point point = createPoint(5, 10);
+        System.out.println("Point create at (" + point.x + ", " + point.y + ")");
 
-        결과 = 계산기.합(30, 70);
-        System.out.println("결과 : " + 결과);
-        // 출력 => 결과 : 100
+        // 포인트 모양의 객체와 연결 될 포인트 변수;
 
-        결과 = 계산기.차(30, 70);
-        System.out.println("결과 : " + 결과);
-        // 출력 => 결과 : -40
+        int[] evens = firstNEvenNumbers(5);
+        System.out.println("first 5 even numbers : " + Arrays.toString(evens));
+    }
+      // int[] 모양의 객체와 연결될 변수
 
-        결과 = 계산기.곱(3, 7);
-        System.out.println("결과 : " + 결과);
-        // 출력 => 결과 : 21
+
+
+
+    public static String greet(String name) { // 문자열 매개변수 1개 받는 greet(String) 메서드
+        return "Hello, " + name + "!"; // static ==  인스턴스화 없이 사용(new x)
     }
 
+    public static Point createPoint(int x, int y) {
+        return new Point(x, y); 
+    }
+
+    public static int[] firstNEvenNumbers(int n) {
+        int[] evenNumbers = new int[n];
+
+        for (int i = 0, num = 2; i < n; i++, num += 2) {
+            evenNumbers[i] = num; //  evenNumber == 짝수
+        }
+        return evenNumbers;
+    }
 }
-
-class 계산기{
-
-    static int 합(int a ,int b ){
-
-//        System.out.println(" a + b : " + (a+b));
-        
-        return a+b;
-    }
-
-    static int 차(int a ,int b ) {
-//        System.out.println(" a - b : " + (a - b));
-        
-        return a-b;
-    }
-
-    static int 곱(int a ,int b ) {
-//        System.out.println(" a * b : " + (a * b));
-        
-        return a*b;
-    }
-
-
-
-}
-
