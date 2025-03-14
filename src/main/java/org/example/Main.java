@@ -8,99 +8,42 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+// 문제 : 아래가 실행되도록 해주세요.
+// ArrayList 사용가능
 
-public class Main {
+class Main {
     public static void main(String[] args) {
-        v4();
-    }
+        사람인력관리소 a사람인력관리소 = new 사람인력관리소();
 
-    static void v4() {
-        System.out.println("==v4==");
-        List<Article> articles = new ArrayList<>();
-        articles.add(new Article()); // index : 0 , id : 1
-        articles.add(new Article()); // index : 1 , id : 2
-        articles.add(new Article()); // index : 2 , id : 3
+        a사람인력관리소.add사람("홍길순", 33);
+        // 나이가 33살인 1번째 사람(홍길순)이 추가되었습니다.
+        a사람인력관리소.add사람("홍길동", 20);
+        // 나이가 20살인 2번째 사람(홍길동)이 추가되었습니다.
+        a사람인력관리소.add사람("임꺽정", 30);
+        // 나이가 30살인 3번째 사람(임꺽정)이 추가되었습니다.
 
-        for (int i = 0; i < articles.size(); i++) {
-            Article article = articles.get(i);
-            System.out.println(article.id);
-        }
-    }
 
-    static void v3() {
-        System.out.println("==v3==");
-        ArrayList<Article> articles = new ArrayList<>();
-        articles.add(new Article()); // index : 0 , id : 1
-        articles.add(new Article()); // index : 1 , id : 2
-        articles.add(new Article()); // index : 2 , id : 3
-        articles.add(new Article()); // index : 3 , id : 4
-
-        for (int i = 0; i < articles.size(); i++) {
-            Article article = articles.get(i);
-            System.out.println(article.id);
-        }
-    }
-
-    static void v2() {
-        System.out.println("==v2==");
-        ArrayList articles = new ArrayList();
-        articles.add(new Article()); // index : 0 , id : 1
-        articles.add(new Article()); // index : 1 , id : 2
-        articles.add(new Article()); // index : 2 , id : 3
-        articles.add(new Article()); // index : 3 , id : 4
-
-        for (int i = 0; i < articles.size(); i++) {
-            Article article = (Article) articles.get(i);
-            System.out.println(article.id);
-        }
-    }
-
-    static void v1() {
-        System.out.println("==v1==");
-        Article[] articles = new Article[100];
-
-        int articlesSize = 0;
-
-        articles[0] = new Article();
-        articlesSize++;
-        articles[1] = new Article();
-        articlesSize++;
-        articles[2] = new Article();
-        articlesSize++;
-        articles[3] = new Article();
-        articlesSize++;
-        articles[4] = new Article();
-        articlesSize++;
-
-        for (int i = 0; i < articlesSize; i++) {
-            System.out.println(articles[i].id);
-        }
     }
 }
+class 사람인력관리소{
+    static int lastadd;
 
-class Article {
-    static int lastId;
+    int age;
+    String name;
 
-    int id;
-    String regDate;
 
-    static {
-        lastId = 0;
+
+    void add사람 (String name, int age) {
+
+        ArrayList<Integer> add사람 = new ArrayList<>(10);
+        add사람.add(0);
+        add사람.add(1);
+        add사람.add(2);
+
+
+
+        System.out.println("나이가 " + age + "살인 " + add사람.add(0)  + "번째 사람(" + name + ")이 추가되었습니다.");
+
+        }
     }
-
-    Article() {
-        this(lastId + 1, "2025-12-12 12:12:12"); // 다른 생성자 호출(실행), Constructor Call
-        lastId++;
-    }
-
-    Article(int id, String regDate) {
-        this.id = id;
-        this.regDate = regDate;
-    }
-}
-
-
-
-
-// 생성 제네릭 추가 삭제 얻기 변경 순회
 
