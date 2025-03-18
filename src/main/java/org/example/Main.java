@@ -10,23 +10,24 @@ class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        int A ;
-        int B ;
+        int a = 1900;
 
+        a = sc.nextInt();
 
-        A = sc.nextInt();
-        B = sc.nextInt();
+        for (int i = 1; i < a; i++) {
 
-        if (A > B){
-            System.out.println(">");
-        } else if (A == B){
-            System.out.println("==");
-        } else if (A < B){
-            System.out.println("<");
+            if (i % 4 != 1) {
+                return;
+            }
+            if (i % 100 != 1) {
+                return;
+            } else if (i % 400 != 1) {
+                return;
+            }
+            System.out.println(i);
         }
 
-        sc.close();
+
 
     }
 }
-
